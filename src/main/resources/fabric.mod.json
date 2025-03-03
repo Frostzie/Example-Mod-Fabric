@@ -1,0 +1,38 @@
+{
+	"schemaVersion": 1,
+	"id": "examplemod",
+	"version": "0.0.1",
+	"name": "ExampleMod",
+	"description": "Mods description",
+	"authors": [
+		"Authors list"
+	],
+	"contact": {
+		"homepage": "",
+		"sources": ""
+	},
+	"license": "",
+	"icon": "assets/examplemod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			{
+				"adapter": "kotlin",
+				"value": "io.github.frostzie.examplemod.ExampleMod"
+			}
+		]
+	},
+	"mixins": [
+		"examplemod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.10",
+		"minecraft": "~1.21.4",
+		"java": ">=21",
+		"fabric-api": "*",
+		"fabric-language-kotlin": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
