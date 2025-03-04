@@ -1,6 +1,6 @@
 {
 	"required": true,
-	"package": "io.github.frostzie.examplemod.mixin",
+	"package": "com.examplemod.mixin",
 	"compatibilityLevel": "JAVA_21",
 	"mixins": [
 		"ExampleMixin"

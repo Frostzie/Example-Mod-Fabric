@@ -1,3 +1,3 @@
-package io.github.frostzie.examplemod.error
+package com.examplemod.error
 
 class CommandError(message: String, couse: Throwable) : Error(message, couse)

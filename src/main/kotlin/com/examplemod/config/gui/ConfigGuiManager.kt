@@ -1,10 +1,9 @@
-package io.github.frostzie.examplemod.config.gui
+package com.examplemod.config.gui
 
-import io.github.frostzie.examplemod.ExampleMod
-import io.github.frostzie.examplemod.config.Features
+import com.examplemod.ExampleMod
+import com.examplemod.config.Features
 import io.github.notenoughupdates.moulconfig.gui.GuiElementWrapper
 import io.github.notenoughupdates.moulconfig.gui.MoulConfigEditor
-
 
 object ConfigGuiManager {
     var editor:  MoulConfigEditor<Features>? = null

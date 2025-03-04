@@ -1,7 +1,7 @@
-package io.github.frostzie.examplemod.config.features.CategoryB
+package com.examplemod.config.features.CategoryB
 
 import com.google.gson.annotations.Expose
-import io.github.frostzie.examplemod.config.features.CategoryB.SubCategory.SubFeature
+import com.examplemod.config.features.CategoryB.SubCategory.SubFeature
 import io.github.notenoughupdates.moulconfig.annotations.Category
 import io.github.notenoughupdates.moulconfig.annotations.ConfigEditorBoolean
 import io.github.notenoughupdates.moulconfig.annotations.ConfigOption
@@ -9,12 +9,11 @@ import io.github.notenoughupdates.moulconfig.annotations.ConfigOption
 class FeatureB {
 
     @Expose
-    @Category(name = "Sub Category", desc = "This is a test toggle")
+    @Category(name = "Sub Category", desc = "Description")
     var subCategory = SubFeature()
 
     @Expose
-    @ConfigOption(name = "on / off", desc = "True or false feature")
+    @ConfigOption(name = "Toggle", desc = "Turn on or off feature")
     @ConfigEditorBoolean
-    var true_false: Boolean = false
-
+    var on_off1: Boolean = false
 }

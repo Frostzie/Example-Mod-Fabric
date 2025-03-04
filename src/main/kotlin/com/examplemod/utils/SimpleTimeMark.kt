@@ -1,6 +1,5 @@
-package io.github.frostzie.examplemod.utils
+package com.examplemod.utils
 
-import java.text.SimpleDateFormat
 import java.time.Instant
 import kotlin.time.Duration
 import kotlin.time.Duration.Companion.milliseconds
@@ -32,5 +31,4 @@ value class SimpleTimeMark(private val millis: Long) {
 
         fun Long.asTimeMark() = SimpleTimeMark(this)
     }
-
 }

@@ -1,14 +1,13 @@
-package io.github.frostzie.examplemod
+package com.examplemod
 
-import io.github.frostzie.examplemod.config.ConfigManager
-import io.github.frostzie.examplemod.config.Features
-import io.github.frostzie.examplemod.config.gui.ConfigGuiManager
+import com.examplemod.config.ConfigManager
+import com.examplemod.config.Features
+import com.examplemod.config.gui.ConfigGuiManager
 import net.fabricmc.api.ModInitializer
 import net.fabricmc.fabric.api.client.command.v2.ClientCommandManager.literal
 import net.fabricmc.fabric.api.client.command.v2.ClientCommandRegistrationCallback
 import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientTickEvents
 import net.minecraft.client.gui.screen.Screen
-import org.slf4j.LoggerFactory
 
 class ExampleMod : ModInitializer {
 
@@ -21,7 +20,7 @@ class ExampleMod : ModInitializer {
 		})
 
 		ClientCommandRegistrationCallback.EVENT.register { dispatcher, _ ->
-			dispatcher.register(literal("sf").executes {
+			dispatcher.register(literal("config").executes {
 				ConfigGuiManager.openConfigGui()
 				0
 			})
@@ -36,7 +35,6 @@ class ExampleMod : ModInitializer {
 			}
 		}
 	}
-
 
 	companion object {
 		lateinit var configManager: ConfigManager
