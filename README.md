@@ -4,7 +4,7 @@
 This template is an example 1.21.4 fabric mod written in kotlin with the intent to show how to work with [MoulConfig](https://github.com/NotEnoughUpdates/MoulConfig) and other tools.
 This template has every MoulConfig option showoff as well as saving config data. For 1.8.9 templates use [SkyHanni template](https://github.com/hannibal002/Example-1.8.9-Mod) or [nea's template](https://github.com/romangraef/Forge1.8.9Template/tree/kotlin).
 
-![img](https://media.discordapp.net/attachments/1164223035910410282/1346537094599802900/image.png?ex=67c88be4&is=67c73a64&hm=bd59e2a78c3823f53e405be4500e5163bc3634f4e3b86392f39fbc7ad25b0035&=)
+![img](https://github.com/user-attachments/assets/008f11ca-41d2-41d5-95bf-620631907033)
 
 To get started, clone this repository. In `gradle.properties`, replace the values of `archives_base_name` and `maven_group` with your own names. In `settings.gradle.kts` change `rootProject.name` to your desired mod id.
 
