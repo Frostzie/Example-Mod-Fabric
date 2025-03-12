@@ -55,9 +55,9 @@ class FeatureA {
     var text: String = "Default text"
 
     @Expose
-    @ConfigOption(name = "Button?", desc = "")
-    @ConfigEditorButton
-    var button: String = ""
+    @ConfigOption(name = "Button", desc = "Button for feature")
+    @ConfigEditorButton(buttonText = "Text")
+    var button = ""
 
     @Expose
     @ConfigOption(name = "Draggable List", desc = "Draggable text to change the order of the list")

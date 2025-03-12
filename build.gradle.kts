@@ -30,7 +30,6 @@ dependencies {
     "modImplementation"("net.fabricmc.fabric-api:fabric-api:${project.findProperty("fabric_version")}")
     "modImplementation"("net.fabricmc:fabric-language-kotlin:1.13.0+kotlin.2.1.0")
     implementation("com.google.code.gson:gson:2.11.0")
-
     //"modImplementation"("org.notenoughupdates.moulconfig:modern:3.5.0")
     "shadowModImpl"("org.notenoughupdates.moulconfig:modern:3.5.0")
 }
