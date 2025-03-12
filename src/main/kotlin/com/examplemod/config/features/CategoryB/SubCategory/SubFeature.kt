@@ -56,8 +56,4 @@ class SubFeature {
     @ConfigEditorText
     var text2: String = "Deafult text"
 
-    @Expose
-    @ConfigOption(name = "Button", desc = "Button for feature")
-    @ConfigEditorButton
-    var button2: String = "Button text"
 }
